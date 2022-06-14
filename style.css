@@ -199,4 +199,36 @@ nav.show div.icon-close {
   font-size: 1.5rem;
   color: var(--base-color); 
   cursor: pointer; 
- }     
+ }  
+ #about .texto {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: justify;
+}
+
+#about .texto h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+#about .texto p {
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: justify;
+margin-bottom: 1.5rem;
+
+}
+
+#about .imagem {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}   
