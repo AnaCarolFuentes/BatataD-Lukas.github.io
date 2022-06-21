@@ -135,6 +135,7 @@ section {
     hsla(var(--hue),65%,88%,0.34) 100%
  ); 
 }
+
 nav ul li{
   text-align: center;
 }
@@ -203,7 +204,7 @@ nav.show div.icon-close {
  #about .texto {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  text-align: justify;
+  text-align: center;
 }
 
 #about .texto h1 {
@@ -212,7 +213,7 @@ nav.show div.icon-close {
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 1rem;
 }
 
@@ -231,4 +232,33 @@ margin-bottom: 1.5rem;
 #about .imagem {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-}   
+}  
+
+.justify-text{
+  text-align: center;
+}
+
+.card{
+  padding: 3.6rem 2rem;
+  box-shadow: var(--base-color);
+  border-bottom: .25rem solid var(--base-color);
+  border-radius: .25rem .25rem 0 0;
+  text-align: center;
+}
+.card i {
+display: block ;
+margin-bottom: 1.5rem;
+font-size: 6rem;
+color: var(--base-color);
+}
+
+#services .title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
