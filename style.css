@@ -262,3 +262,104 @@ color: var(--base-color);
   margin-bottom: 1rem;
 }
 
+.section .title {
+  margin-bottom: 1rem;
+}
+
+.section .subtitle {
+  font-size: var(--subtitle-font-size);
+}
+:root {
+  --title-font-size: 2.25rem;
+  --subtitle-font-size: 1.125rem;
+}
+#contact .title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#contact .grid {
+  gap: 4rem;
+}
+#contact .texto p {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#contact .button {
+  margin-top: 1.5rem;
+ 
+}
+
+#contact .button i {
+  font-size: 1.5rem;
+  margin-right: 0.675rem;
+  font-family: 'Poppins';
+  font-style: normal;
+}
+
+
+#contact ul.grid {
+  gap: 1.5rem;
+}
+#contact ul li i {
+  color: var(--base-color);
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+#contact .align_button {
+  text-align: center;
+}
+#contact .container {
+  align-items: center;
+  justify-content: space-between;
+}
+#contact .texto {
+  max-width: 25rem;
+}
+
+#contact .align_button {
+  text-align: center;
+}
+footer {
+  background: var(--base-color);
+  padding: 1.5rem 0;
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font: 700 1.5rem 'Poppins', 'sans-serif';
+  color: var(--title-color); 
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social a {
+  margin-right: 2rem;
+}
+
+footer .container {
+  align-items: center;
+}
+
+footer .logo span {
+  color: var(--text-color-light);
+}
+
+
+
+
+
