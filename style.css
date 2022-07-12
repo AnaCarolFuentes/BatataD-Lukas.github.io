@@ -1,8 +1,8 @@
 /* reset */
 * {
-  margin:0;
-  padding: 0; 
-  box-sizing: border-box
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -13,15 +13,14 @@
 
 header {
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 100;
   display: flex;
   margin-bottom: 2rem;
-  border-bottom: 1px solid #e4e4e4 ;
-  background-color: var(--body-color);
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #ffffff;
   width: 100%;
-
 }
 
 main {
@@ -39,10 +38,10 @@ nav {
 nav.show .menu {
   opacity: 1;
   visibility: visible;
-  background: var(--body-color);
+  background: #f0cd06;
   height: 100vh;
   width: 100vw;
-  top:0;
+  top: 0;
   left: 0;
   position: fixed;
 }
@@ -54,7 +53,7 @@ nav .menu {
 
 img {
   width: 100%;
-  height: auto;  
+  height: auto;
 }
 
 a {
@@ -62,22 +61,22 @@ a {
 }
 
 body {
-  font: 400 1rem 'DM Sans', 'sans-serif';
-  background: var(--body-color) ;
+  font: 400 1.2rem 'Abel', 'sans-serif';
+  background: var(--body-color);
   color: var(--text-color);
 }
 
 .logo h1 {
-  font: 700 1.5rem 'Poppins', sans-serif;
-  color: #f0cd06;
+  font: 1000 1.5rem 'Fredoka One', sans-serif;
+  color: #c20808;
 }
 
 .logo span {
-  color:#c20808; 
+  color: #fbd204;
 }
 
 .title {
-  font: 700 1.5rem 'Poppins', 'sans-serif';
+  font: 400 2rem 'Fredoka One', 'sans-serif';
   color: var(--title-color);
 }
 
@@ -85,11 +84,10 @@ section {
   padding: 1.5rem 0;
 }
 
-.grid { 
+.grid {
   display: grid;
-  gap: 2rem; /**espaço vertical**/
+  gap: 2rem; /** espaço vertical**/
 }
-
 
 #home .texto {
   margin-left: 1.5rem;
@@ -98,7 +96,6 @@ section {
 }
 
 #home .texto h1 {
-
   margin-bottom: 1rem;
 }
 
@@ -107,153 +104,141 @@ section {
 }
 
 #home .imagem {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .button {
-   background-color: #c20808;
-   color: var(--text-color-light);
-   display: inline-flex;
-   height: 3.5rem;
+  background-color: #c20808;
+  color: var(--text-color-light);
+  display: inline-flex;
+  height: 3.5rem;
   align-items: center;
   padding: 0 2rem;
-  font: 500 1rem 'Dm Sans', sans-serif; 
+  font: 600 1rem 'Abel', sans-serif;
   transform: background 0.3s;
 }
 
 .button:hover {
-  background: #e60000; 
-
+  background: #dd1607;
 }
 
 .divider {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue),36%,57%,1) 0%,
-    hsla(var(--hue),65%,88%,0.34) 100%
- ); 
+    hsla(0, 100%, 43%, 1),
+    hsla(54, 100%, 50%, 1)
+  );
 }
 
-nav ul li{
+nav ul li {
   text-align: center;
 }
-nav.show ul.grid{
+nav.show ul.grid {
   gap: 4rem;
 }
 nav.show .menu {
   display: grid;
   place-content: center; /**centralizar conteúdo do menu no display**/
 }
-ul{
+ul {
   list-style: none;
 }
-nav ul li a:hover {  /**hover = muda de cor quando passa com o cursor em cima do link**/
+nav ul li a:hover {
+  /**hover = muda de cor quando passa com o cursor em cima do link**/
   color: var(--base-color);
-  
 }
 nav ul li a {
   transition: color 0.3s;
   position: relative;
 }
-nav ul li a:hover::after{ /**depois que estiver sobre**/
-  content:"";
-  width:100%;
+nav ul li a:hover::after {
+  /**depois que estiver sobre**/
+  content: '';
+  width: 100%;
   height: 3px;
-  background:#c20808 ;
-  
+  background: #c20808;
   position: absolute;
   left: 0;
   bottom: 0;
   transition: 0.2s;
 }
 
-
-
-
 :root {
-   --hue: 159;
-   /* HSL color mode */
-  --base-color:#c20808 ;
+  --hue: 159;
+  /* HSL color mode */
+  --base-color: #c20808;
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --body-color: rgb(250, 250, 250);
 }
-nav .icon-close {
+nav .icon-cross {
   visibility: hidden;
   opacity: 0;
-  
+
   position: absolute;
   right: 1.5rem;
 }
 
-nav.show div.icon-close {
+nav.show div.icon-cross {
   visibility: visible;
   opacity: 1;
 }
 
 .toggle {
   font-size: 1.5rem;
-  color: var(--base-color); 
-  cursor: pointer; 
- }  
- #about .texto {
+  color: var(--base-color);
+  cursor: pointer;
+}
+#about .texto {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   text-align: center;
 }
 
 #about .texto h1 {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 #about .texto p {
-
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-text-align: justify;
-margin-bottom: 1.5rem;
-
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 26px;
+  text-align: justify;
+  margin-bottom: 1.5rem;
 }
 
 #about .imagem {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}  
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 
-.justify-text{
+.justify-text {
   text-align: center;
 }
 
-.card{
+.card {
   padding: 3.6rem 2rem;
   box-shadow: var(--base-color);
-  border-bottom: .25rem solid var(--base-color);
-  border-radius: .25rem .25rem 0 0;
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
 .card i {
-display: block ;
-margin-bottom: 1.5rem;
-font-size: 6rem;
-color: var(--base-color);
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 6rem;
+  color: #fbd204;
 }
 
-#services .title{
-  font-family: 'Poppins';
+#services .title {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -273,14 +258,13 @@ color: var(--base-color);
   --title-font-size: 2.25rem;
   --subtitle-font-size: 1.125rem;
 }
-#contact .title{
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
+#contact {
   text-align: center;
-  margin-bottom: 2rem;
+}
+#contact .texto h2 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
 }
 #contact .grid {
   gap: 4rem;
@@ -292,16 +276,15 @@ color: var(--base-color);
 
 #contact .button {
   margin-top: 1.5rem;
- 
 }
 
 #contact .button i {
   font-size: 1.5rem;
   margin-right: 0.675rem;
-  font-family: 'Poppins';
+  font-family: 'Abel';
   font-style: normal;
+  text-align: center;
 }
-
 
 #contact ul.grid {
   gap: 1.5rem;
@@ -325,16 +308,66 @@ color: var(--base-color);
 #contact .align_button {
   text-align: center;
 }
+#contact .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#depoimentos .grid {
+  gap: 1.5rem;
+}
+#depoimentos .texto h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#about .texto {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#depoimentos .texto p {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 26px;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+#depoimentos .texto {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+#depoimentos .imagem {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+#depoimentos .texto p {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: justify;
+}
+
+#about .imagem {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 footer {
-  background:#f0cd06;
+  background: #f0cd06;
   padding: 1.5rem 0;
 }
 
 footer .logo {
   display: inline-block;
   margin-bottom: 1.5rem;
-  font: 700 1.5rem 'Poppins', 'sans-serif';
-  color: var(--base-color); 
+  font: 700 1.5rem 'Fredoka One', 'sans-serif';
+  color: var(--base-color);
 }
 
 footer .brand p {
@@ -358,8 +391,3 @@ footer .container {
 footer .logo span {
   color: var(--base-color);
 }
-
-
-
-
-
